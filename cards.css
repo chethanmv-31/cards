@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+ body {
+    font-family: 'Shadows Into Light', cursive;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-decoration: none;
+ }
+
+ .profile-card {
+    position: relative;
+    width: 400px;
+    height: 550px;
+    background: url(background.jpg);
+    background-size: cover;
+    border-radius: 15px;
+    transition: 0.6s;
+ }
+
+ .contents-box {
+     width: 400px;
+     height: 300px;
+     background: #883a058f;
+     position: absolute;
+     right: -100px;
+     top: 150px;
+     border-radius: 10px;
+     text-align: center;
+     opacity: 0;
+     transform: scaleX(0);
+     transition: 0.6s;   
+ }
+
+ .contents {
+    font-size: 20px;
+    color: #fff;
+ }
+
+ .social {
+        font-size: 25px;
+        color: #fff;
+ }
+
+ .social a{
+    text-decoration: none;
+    transition: 0.5s;
+    color: #fff;
+
+ }
+
+ .social a:hover {
+     transform:  scale(1.5) rotate(45deg);
+ }
+
+ .contact {
+     margin-top: 20px;
+ }
+
+ .contact a {
+     background: #fff;
+     color: #883a058f;
+     width: 30px;
+     height: 30px;
+     padding: 10px;
+     font-size: 25px;
+     border-radius: 50px;
+     text-decoration: none;
+     transition: 0.6s;
+ }
+
+ .contact a:hover {
+    width: 150px;  
+ }
+
+ .profile-card:hover {
+     box-shadow: 1px 20px 30px rgba(0, 0, 0, 0.5);
+ }
+
+ .profile-card:hover .contents-box {
+     opacity: 1;
+     transform: scaleX(1);
+ }
+
+ .profile-card:hover .social a {
+    margin: 30px;  
+ }
